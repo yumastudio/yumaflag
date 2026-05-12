@@ -1,0 +1,54 @@
+/* Playback Controls */
+.playback-controls {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    background: var(--panel-bg);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.playback-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.playback-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+}
+
+.playback-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.preview-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Stack canvas and controls */
+    justify-content: center;
+    align-items: center;
+    /* ... exist styles ... */
+    background-image:
+        radial-gradient(#2c2c35 1px, transparent 1px),
+        radial-gradient(#2c2c35 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    background-color: #0f0f11;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
