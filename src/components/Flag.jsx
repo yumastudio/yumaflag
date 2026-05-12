@@ -124,7 +124,7 @@ const Flag = ({ imageUrl, params, isPlaying, manualTime = null, quality = 'mediu
   }, []); // Re-generate only if config dependency changes
 
   // Load Texture & Get Height
-  const texture = useTexture(imageUrl || '/vite.svg');
+  const texture = useTexture(imageUrl || `${import.meta.env.BASE_URL}vite.svg`);
   const { gl } = useThree();
 
   useEffect(() => {
